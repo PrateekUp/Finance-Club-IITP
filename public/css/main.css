@@ -1,0 +1,213 @@
+* {
+    padding: 0;
+    margin: 0 !important;
+  }
+html{
+    scroll-behavior: smooth;
+}
+.nav-link{
+      color: rgb(247, 247, 247) !important;
+      font-weight: 500;
+      font-size: 1.1rem;
+}
+button{
+  box-shadow:none !important;
+}
+ul{
+    list-style: none;
+    padding-left: 2px !important;
+}
+.bg-color{
+    background-color: rgb(31,13,90);
+}
+.active{
+    color: rgb(80, 138, 245) !important;
+    border-bottom: 2px solid rgb(80, 138, 245);
+}
+.nav-link:hover{
+    /* background-color: mediumblue !important; */
+    color: rgb(94, 148, 247) !important;
+}
+.nav-item{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.navbar-brand{
+    font-weight:600;
+    color: rgb(247, 247, 247) !important;
+    font-size: 25px;
+}
+.navbar-brand:hover{
+    color: rgb(231, 231, 231) !important;
+}
+.navbar-brand img {
+    height: 30px;
+    width: 30px;
+}
+.fa-bars{
+    color: white;
+}
+
+/* First section */
+.first-section-home{
+    /* margin-top: 50px !important; */
+    position: relative;
+    height: 520px;
+    text-align: center;
+    color: mintcream;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 93%);
+    /* clip-path: polygon(0 0,100% 0,100% 100%,0 calc(100% - 3vw)); */
+}
+.first-section-home::before{
+    content: '';
+    background: url('/images/background.jpg') no-repeat no-repeat;
+    /* background: url('/images/nick-chong-N__BnvQ_w18-unsplash.jpg') no-repeat no-repeat; */
+    background-size: cover;
+    background-blend-mode: darken;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.95;
+    z-index: -1;
+}
+.first-section-home h1{
+    padding-top: 120px;
+}
+.first-section-home p{
+    margin-top: 20px !important;
+}   
+/* Second section */
+.second-section-home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden !important;
+    /* border-bottom: 2px dotted black; */
+}
+.second-section-home h1{
+    padding-top: 30px;
+}
+.second-section-home p{
+    padding-top: 10px;
+    max-width: 500px;
+    color: rgb(112, 113, 116);
+}
+.second-section-home h1, .second-section-home p{
+    padding-left: 135px;
+}
+hr{
+    border: dotted #5d5e5e 2px;
+    border-bottom: none;
+    width: 15% !important;
+    margin: 65px auto !important;
+}
+/* third section */
+.third-section-home{
+    /* background-color: ; */
+    text-align: center;
+    /* justify-content: center; */
+    margin-top: 50px !important;
+}
+.third-section-home h1{
+    text-align: center;
+}
+.third-section-home img{
+    /* width: 500px;
+    height: 500px; */
+    margin-top: 77px !important;
+    /* padding-left: 30px; */
+}
+.third-section-home ul{
+    list-style: none;
+    text-align: left;
+    margin-top: 20px !important;
+}
+/* contact form */
+.fourth-section-home{
+    background-color: rgb(246 248 250);
+    clip-path: polygon(0 0, 100% 7%, 100% 100%, 0 100%);
+    padding-bottom: 20px;
+}
+.fourth-section-home h1{
+    text-align: center;
+    padding-top: 20px;
+}
+#formid{
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 50%;
+}
+#formid button{
+    width: 100%;
+}
+/* catch us live */
+.fifth-section-home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+.fifth-section-home h1{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+iframe{
+    width: 50% !important;
+}
+/* footer section */
+footer{
+    padding: 30px;
+    background-color: midnightblue;
+}
+h2{
+    color: snow;
+}
+a i{
+    padding: 10px;
+}
+footer a{
+    color: snow;
+    text-decoration: none;
+}
+footer a:hover{
+    color: snow;
+    /* text-decoration: none; */
+}
+footer li{
+    color: snow;
+}
+.quick-links-reach{
+    display: flex;
+    flex-direction: column;
+}
+footer hr{
+    border: solid #dfecec 2px;
+    border-bottom: none;
+    width: 75% !important;
+    margin: 40px auto !important;
+}
+footer p{
+    color: snow;
+}
+footer i{
+    color:snow;    
+    display: inline;
+}
+footer ul i{
+    margin-right: 5px !important;
+}
+.copyright{
+    text-align: center;
+}
+@media only screen and (max-width: 990px) {
+    .resp{
+        margin-top: 25px !important;
+    }
+    footer{
+        padding-top: 0;
+    }
+}

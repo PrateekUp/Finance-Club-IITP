@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include ('./includes/head.ejs') %> 
+<body>
+   <%- include ('./includes/navbar.ejs') %> 
+   <section class="first-section-home">
+       <h1 class="heading">FINANCE CLUB</h1>
+       <p>Lorem ipsum dolor official!</p>
+   </section>
+   <section class="second-section-home row" id='about'>
+       <div class="col-lg-6 col-md-7 col-sm-12">
+        <h1>ABOUT US!</h1> 
+        <p>Finance Club, IIT Patna is a student-driven body that aims at increasing the awareness of Finance and Consulting as a career option through keynote sessions, workshops, and competitions for the student community!</p>
+       </div>
+       <div class="col-lg-6 col-md-7 col-sm-12">
+           <img src="/images/aboutus.png" alt="About Us"/>
+       </div> 
+   </section>
+   <hr/>
+   <section class="third-section-home row">
+    <div class="col-lg-6 col-md-7 col-sm-12">
+       <img src="/images/working.png" alt="working"/>
+    </div>
+    <div class="col-lg-6 col-md-7 col-sm-12">
+       <h1>Working of Finance Club</h1>
+       <ul>
+           <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quae quis saepe commodi!</li>
+           <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quae quis saepe commodi!</li>
+           <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quae quis saepe commodi!</li>
+           <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quae quis saepe commodi!</li>
+           <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quae quis saepe commodi!</li>
+           <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quae quis saepe commodi!</li>
+       </ul>
+    </div>
+   </section>
+   <!-- <hr/> -->
+   <section class="fourth-section-home" id="contact">
+       <h1>Contact Us</h1>
+       <%- include('./includes/form.ejs') %>
+   </section>
+   <section class="fifth-section-home">
+       <h1>Catch Us Live!</h1>
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL3a8P8_ujbZ8ntTX52icIxXCyZynjQyUP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   </section>
+   <%- include ('./includes/footer.ejs') %> 
+</body>
+</html>
