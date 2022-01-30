@@ -1,0 +1,60 @@
+#team {
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(9, 0, 47, 255);
+}
+
+#team > div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#team > div > h2 {
+  padding-top: 10px;
+  color: #fcd02c;
+}
+
+.box {
+  width: 75vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  flex-wrap: wrap;
+}
+
+.coord {
+  width: 24%;
+  padding: 5px;
+}
+
+.subcoord {
+  width: 21%;
+  padding: 10px;
+}
+
+.coord,
+.subcoord {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.box > div > img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+  .coord,
+  .subcoord {
+    width: 100%;
+  }
+}
