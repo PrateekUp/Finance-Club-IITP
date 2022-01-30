@@ -11,6 +11,10 @@ app.get("/", (req, res, next) => {
     res.status(200).render('home.ejs',{pageTitle: 'Home', path:'/'});
     next();
 });
+app.post("/", (req, res, next) => {
+    res.status(200).render('home.ejs',{pageTitle: 'Home', path:'/'});
+    next();
+});
 app.get("/events", (req, res, next) => {
     res.status(200).render('events.ejs',{pageTitle: 'Events', path:'/events'});
     next();
@@ -18,9 +22,6 @@ app.get("/events", (req, res, next) => {
 app.get("/team", (req, res, next) => {
     res.status(200).render('team.ejs',{pageTitle: 'Team', path:'/team'});
     next();
-});
-app.get("/contact", (req, res, next) => {
-    res.status(200).render('contact.ejs',{pageTitle: 'Contact', path:'/contact'});
 });
 
 app.listen(port, () => console.log (`Server running on port ${port} 🔥`));
