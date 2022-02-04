@@ -1,9 +1,7 @@
 #team {
   padding-top: 80px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   background-color: rgba(9, 0, 47, 255);
+
 }
 
 #team > div {
@@ -13,48 +11,152 @@
   align-items: center;
 }
 
-#team > div > h2 {
+#team > div > h1 {
   padding-top: 10px;
-  color: #fcd02c;
+  color: aliceblue;
 }
 
-.box {
-  width: 75vw;
-  display: flex;
-  justify-content: space-between;
+.testimonial-box{
+  width: 80%;
+  height: 50%;
   align-items: center;
-  padding: 50px;
-  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 30px !important;
+  margin-top: 30px !important;
 }
 
-.coord {
-  width: 24%;
-  padding: 5px;
-}
-
-.subcoord {
-  width: 21%;
-  padding: 10px;
-}
-
-.coord,
-.subcoord {
-  display: flex;
-  flex-direction: column;
+.single-box {
+	/* border: 2px solid rgb(87, 84, 84); */
   justify-content: center;
   align-items: center;
-  color: white;
+	/* border-radius: 15px; */
+	overflow: hidden;
+  margin: 10px 20px; 
+  padding: 0px;
+	/* background-color: #fff */
+}
+.info-area {
+	padding: 0 20px 45px;
+}
+.img-area {
+  display: flex;
+	overflow: hidden;
+  justify-content: center;
+  align-items: center;
+	padding: 15px 0px 15px;
+}
+.img-area img {
+  object-fit: cover;
+	margin: auto auto;
+  border-radius: 17%;
+  box-shadow: beige;
+  padding: 15px;
+  /* padding-bottom: 20px; */
+	-webkit-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	max-width: 230px
+}
+.single-box:hover img {
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+.info-area i {
+	display: inline-block;
+	/* color: #ffb400; */
+	margin: 0 4px;
+}
+/* .info-area h4 {
+	font-weight: 600
+} */
+.info-area h4 {
+	color: #fcfcfd;
+	margin: 10px 0 0;
+	font-weight: 600;
+}
+.info-area p{
+	color: #adadfc;
+	margin: 10px 0 0;
+	font-weight: 400;
+	font-size: large;
+}
+.info-area a {
+	display: inline-block;
+	margin: 25px 0 0;
+	/* background-color: darkorange; */
+	color: #fff;
+	padding: 10px;
+	border-radius: 4px;
+}
+.team-slider .owl-dots {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: -30px;
+	text-align: center;
+	width: 100%;
 }
 
-.box > div > img {
-  width: 100%;
-  height: auto;
-  border-radius: 50%;
+.team-slider button.owl-dot {
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	margin: 0 6px;
+	text-align: center;
+	border-radius: 50%;
+	background-color: #ddd2d2;
 }
 
-@media only screen and (max-width: 600px) {
-  .coord,
-  .subcoord {
-    width: 100%;
+.team-slider .owl-dot.active {
+	background-color: coral;
+}
+
+.move-animation {
+	position: relative;
+	-webkit-animation: move-animation 1.8s ease-in-out infinite;
+	animation: move-animation 1.8s ease-in-out infinite;
+}
+@-webkit-keyframes move-animation {
+	0% {
+		top: 2px;
+	}
+	50% {
+		top: -2px;
+	}
+	100% {
+		top: 2px;
+	}
+}
+
+/* .overall{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   }
-}
+.mainc{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+} */
+/* .coord{
+  width: 24%;
+  padding: 4px;
+  justify-content: center !important;
+  align-items: center;
+  text-align: center;
+} */
+ /* .subcoord{
+  padding-top: 30px;
+  width: 60%;
+} */
+
+/* .overall .coord img , .mainc .coord img , .subcoord{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+} */ 
+
+

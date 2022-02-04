@@ -1,13 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-<%- include ('./includes/head.ejs') %> 
-<body>
-   <%- include ('./includes/navbar.ejs') %> 
-</ul>
-</div>
-</div>
-</nav>
-   <h1 class="heading">Hello, this is the <%= pageTitle %> page of our Finance World!!!</h1>
-   <%- include ('./includes/footer.ejs') %> 
-</body>
+<%- include ('./includes/head.ejs') %>
+
+  <body>
+    <%- include ('./includes/navbar.ejs') %>
+      </ul>
+      </div>
+      </div>
+      </nav>
+      <section class="first text-center">
+        <div class="heading">
+          <h2>Upcoming Events</h2>
+        </div>
+
+        <hr style="width: 30%;">
+        <div class="slider">
+          <div class="owl-carousel">
+            <div class="slider-card">
+              <div class="d-flex justify-content-center align-items-center mb-4">
+                <img src="eimages/opj.jpg" alt="" style="object-fit: cover;">
+              </div>
+              <h5 class="text-center"><b>Session 1</b></h5>
+              <p class="text-center p-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam temporibus
+                quidem magni qui doloribus quasi natus inventore nisi velit minima.</p>
+            </div>
+            <div class="slider-card">
+              <div class="d-flex justify-content-center align-items-center mb-4">
+                <img src="eimages/pq.jpg" alt="" style="object-fit: cover;">
+              </div>
+              <h5 class="text-center"><b>Crypto Taxation</b></h5>
+              <p class="text-center p-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam temporibus
+                quidem magni qui doloribus quasi natus inventore nisi velit minima.</p>
+            </div>
+            <div class="slider-card">
+              <div class="d-flex justify-content-center align-items-center mb-4">
+                <img src="eimages/pqr.jpg" alt="" style="object-fit: cover;">
+              </div>
+              <h5 class="text-center"><b>Session2</b></h5>
+              <p class="text-center p-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam temporibus
+                quidem magni qui doloribus quasi natus inventore nisi velit minima.</p>
+            </div>
+            <div class="slider-card">
+              <div class="d-flex justify-content-center align-items-center mb-4">
+                <img src="eimages/qrs.jpg" alt="">
+              </div>
+              <h5 class="text-center"><b>Freshers meet</b></h5>
+              <p class="text-center p-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam temporibus
+                quidem magni qui doloribus quasi natus inventore nisi velit minima.</p>
+            </div>
+            <div class="slider-card">
+              <div class="d-flex justify-content-center align-items-center mb-4">
+                <img src="eimages/tt pixxel.jpg" alt="" style="object-fit: cover;">
+              </div>
+              <h5 class="text-center"><b>Celesta and Infinito</b></h5>
+              <p class="text-center p-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam temporibus
+                quidem magni qui doloribus quasi natus inventore nisi velit minima.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- <hr> -->
+      <section class="second text-center">
+        <div class="heading">
+          <h2>
+            Guest Lectures
+          </h2>
+        </div>
+        <hr>
+        <div class="slider">
+          <div class="owl-carousel">
+            <div class="slider-card">
+              <div class="d-flex justify-content-center align-items-center mb-4">
+                <img src="eimages/opj.jpg" alt="" style="object-fit: cover;">
+              </div>
+              <h5 class="text-center"><b>Session 1</b></h5>
+              <p class="text-center p-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam temporibus
+                quidem magni qui doloribus quasi natus inventore nisi velit minima.</p>
+            </div>
+            <div class="slider-card">
+              <div class="d-flex justify-content-center align-items-center mb-4">
+                <img src="eimages/pq.jpg" alt="" style="object-fit: cover;">
+              </div>
+              <h5 class="text-center"><b>Crypto Taxation</b></h5>
+              <p class="text-center p-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam temporibus
+                quidem magni qui doloribus quasi natus inventore nisi velit minima.</p>
+            </div>
+            <div class="slider-card">
+              <div class="d-flex justify-content-center align-items-center mb-4">
+                <img src="eimages/pqr.jpg" alt="" style="object-fit: cover;">
+              </div>
+              <h5 class="text-center"><b>Session2</b></h5>
+              <p class="text-center p-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam temporibus
+                quidem magni qui doloribus quasi natus inventore nisi velit minima.</p>
+            </div>
+            <div class="slider-card">
+              <div class="d-flex justify-content-center align-items-center mb-4">
+                <img src="eimages/qrs.jpg" alt="">
+              </div>
+              <h5 class="text-center"><b>Freshers meet</b></h5>
+              <p class="text-center p-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam temporibus
+                quidem magni qui doloribus quasi natus inventore nisi velit minima.</p>
+            </div>
+            <div class="slider-card">
+              <div class="d-flex justify-content-center align-items-center mb-4">
+                <img src="eimages/tt pixxel.jpg" alt="" style="object-fit: cover;">
+              </div>
+              <h5 class="text-center"><b>Celesta and Infinito</b></h5>
+              <p class="text-center p-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam temporibus
+                quidem magni qui doloribus quasi natus inventore nisi velit minima.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <%- include ('./includes/footer.ejs') %>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <script>
+          //owl carousel
+          $(".owl-carousel").owlCarousel({
+            loop: true,
+            margin: 0,
+            nav: true,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            autoplayHoverPause: true,
+            center: true,
+            navText: [
+              "<i class='fa fa-angle-left'></i>",
+              "<i class='fa fa-angle-right'></i>"
+            ],
+            responsive: {
+              0: {
+                items: 1
+              },
+              500: {
+                items: 2
+              },
+              1000: {
+                items: 3
+              }
+            }
+          });
+
+        </script>
+  </body>
+
 </html>
