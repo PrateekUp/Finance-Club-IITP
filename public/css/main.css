@@ -167,6 +167,9 @@ hr{
 #formid button{
     width: 100%;
 }
+textarea:focus, input:focus{
+    box-shadow:none !important;
+}
 /* catch us live */
 .fifth-section-home{
     display: flex;
