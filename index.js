@@ -51,7 +51,7 @@ app.post('/', async (req, res) => {
   try {
     let info = await transporter.sendMail({
       from: `"${name}" finclubiitp.noreply@gmail.com`,
-      to: 'finclubiitp.noreply@gmail.com',
+      to: 'fin_club@iitp.ac.in',
       subject: name,
       html: `<h3>${name}</h3><h4>${email}</h4><p>${message}</p>`,
     })
