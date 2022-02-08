@@ -64,7 +64,7 @@ ul {
 }
 .first-section-home::before {
   content: '';
-  background: url('/images/background1.jpg') no-repeat no-repeat;
+  background: url('/images/background.jpg') no-repeat no-repeat;
   background-size: cover;
   background-blend-mode: color-burn;
   position: absolute;
