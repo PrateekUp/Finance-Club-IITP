@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;600;700&family=Lobster+Two:ital@1&family=Nunito:ital,wght@0,300;0,400;1,200&display=swap');
+
 *{
     margin: 0;padding: 0;
 }
@@ -9,16 +11,47 @@
     padding: 20px 40px;
 }
 .cont{
-    display: flex;
-    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 15px;
+    display: grid;
 }
-.para p{
-    padding-right: 20px;
+.zexy{
+    justify-content: center;
+    align-items: center;
+    /* display: grid; */
+}
+.zexy h4{
+    font-size: 31px !important;
+    text-align: center !important;
+    font-family: 'Orbitron', sans-serif;
+    padding: 20px 5px;
+}
+.zexy ul li{
+    list-style-type: disc;
+    font-size: 17px;
+}
+.zexy h5{
+    font-size: 28px;
+    text-decoration: solid 2px darkblue;
+    padding: 17px 0px;
+    font-weight: 600;
+}
+.zexy h6{
+    font-size: 20px;
+    font-weight: 600;
+    padding: 5px 0px 10px 0px;
 }
 
-.img-fluid img{
-width: 80%;
-height: 60%;
-border-radius: 20px;
-box-shadow: beige;
+.quote{
+    justify-content: center;
+    padding: 20px 20px;
+}
+.quote h4{
+font-family: 'Lobster Two', cursive;
+font-size: 40px;
+}
+.once{
+    display: grid;
+    text-decoration: none;
 }

@@ -2,7 +2,8 @@
   padding: 0;
   margin: 0 !important;
   font-family: 'Nunito', sans-serif;
-}
+ }
+ 
 html {
   scroll-behavior: smooth;
 }
@@ -27,9 +28,9 @@ ul {
 .bg-color {
   background-color: rgba(9, 0, 47, 255);
 }
-.active {
+.actives {
   color: rgb(90, 144, 245) !important;
-  border-bottom: 2px solid rgb(90, 144, 245);
+  border-bottom: 2px solid rgb(90, 144, 245)!important;
 }
 .nav-link:hover {
   color: rgb(90, 144, 245) !important;
@@ -113,7 +114,7 @@ ul {
 }
 .second-section-home p {
   padding-top: 10px;
-  max-width: 500px;
+  max-width: 700px;
   color: rgb(112, 113, 116);
 }
 .second-section-home img {
@@ -121,8 +122,9 @@ ul {
 }
 .second-section-home h1,
 .second-section-home p {
-  padding-left: 13px;
+  padding-left: 17px;
   text-align: start;
+  font-size: 17px;
 }
 hr {
   border: dotted #343535 3px;
@@ -140,15 +142,16 @@ hr {
   text-align: start;
 }
 .third-section-home img {
-  /* width: 500px;
-    height: 500px; */
+  width: 50vh;
+    height: 30vw;
   margin: 3vh auto !important;
   /* padding-left: 30px; */
 }
-.third-section-home ul {
-  list-style: none;
+.third-section-home p {
   text-align: left;
   margin-top: 20px !important;
+  padding-right: 20px;
+  font-size: 17px;
 }
 /* contact form */
 .fourth-section-home {
@@ -194,7 +197,10 @@ iframe {
 /* footer section */
 footer {
   padding: 30px;
+  padding-left: 40px;
   background-color: rgba(9, 0, 47, 255);
+  /* text-align: center; */
+
 }
 h2 {
   color: snow;
@@ -278,6 +284,13 @@ footer ul i {
   iframe {
     width: inherit !important;
     padding-right: 0 !important;
+  }
+  .third-section-home img {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+    /* margin: 3vh auto !important; */
+    /* padding-left: 30px; */
   }
 }
 @media only screen and (min-width: 502px) and (max-width: 990px) {
