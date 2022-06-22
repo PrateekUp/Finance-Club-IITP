@@ -2,7 +2,8 @@
 
 Website for Finance club of IIT Patna.
 
-![Image](/screenshots/1.png)
-![Image](/screenshots/2.png)
-![Image](/screenshots/3.png)
-![Image](/screenshots/4.png)
+![Image](/screenshots/58.png)
+![Image](/screenshots/59.png)
+![Image](/screenshots/60.png)
+![Image](/screenshots/79.png)
+![Image](/screenshots/81.png)
