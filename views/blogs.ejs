@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include ('./includes/head.ejs') %>
+
+    <link rel="stylesheet" href="/css/blogs.css" />
+
+
+    <body>
+        <%- include ('./includes/navbar.ejs') %>
+            </ul>
+            </div>
+            </div>
+            </nav>
+            <section class="blogarea">
+
+
+                <div class="bloghead">
+                    <h1>FC Blogs</h1>
+                </div>
+                <hr style="width: 20rems; margin-bottom: 15rem;">
+
+                <div class="blogs">
+                    <div class="container" style="max-width: 100vw;">
+                        <div class="row row-cols-1 row-cols-md-3 g-4">
+                            <% articles.forEach(article=> { %>
+                                <div class="col"
+                                    style="margin-bottom: 40px!important;display: flex;justify-content: center;">
+                                    <div class="card bg-color1 border-info h-100" style="width: 27rem;">
+                                        <div class="card-body">
+                                            <h5 class="card-title">
+                                                <%= article.title %>
+                                            </h5>
+                                            <h6 class="card-subtitle mb-2 text-muted">
+                                                <%= article.createdAt.toLocaleDateString() %>
+                                            </h6>
+                                            <p class="card-text">
+                                                <%= article.description %>
+                                            </p>
+                                            <a href="articles/<%= article.id %>" class="card-link text-danger">Load
+                                                More</a>
+                                            <!-- <a href="#" class="card-link">Another link</a> -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <% }) %>
+                                    <div class="col"
+                                        style="margin-bottom: 40px!important;display: flex;justify-content: center;">
+                                        <div class="card bg-color1 border-info h-100" style="width: 27rem;">
+                                            <div class="card-body">
+                                                <h5 class="card-title">
+                                                    New to this Field : Get all the Resources you need!
+                                                </h5>
+                                                <h6 class="card-subtitle mb-2 text-muted">
+                                                    1/6/2022
+                                                </h6>
+                                                <p class="card-text">
+                                                    This Blog contains all the relevant resources you need to dive
+                                                    into this vast field of Finance, whether in investing,
+                                                    consultancy or others. <br> Read Full Blog for more.
+                                                </p>
+                                                <a href="/resources" class="card-link text-danger">Load More</a>
+                                                <!-- <a href="#" class="card-link">Another link</a> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+
+
+            </section>
+            <%- include ('./includes/footer.ejs') %>
+    </body>
+
+</html>

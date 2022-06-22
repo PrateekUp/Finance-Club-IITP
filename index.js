@@ -1,10 +1,19 @@
 const express = require('express')
 const path = require('path')
+const mongoose = require('mongoose')
+const articleRouter = require('./routes/articles')
 const app = express()
 const bodyParser = require('body-parser')
 const nodemailer = require('nodemailer')
 const session = require('express-session')
 const flash = require('connect-flash')
+const article = require('./models/article')
+
+main().catch(err => console.log(err));
+
+async function main() {
+  await mongoose.connect('mongodb://localhost:27017/FCblogs');
+}
 
 app.use(
   session({
@@ -13,6 +22,7 @@ app.use(
     saveUninitialized: true,
   })
 )
+
 
 app.use(flash())
 
@@ -25,7 +35,7 @@ const port = process.env.PORT || 5000
 
 app.get('/', (req, res, next) => {
   res.status(200).render('home.ejs', {
-    pageTitle: 'Finance Club IITP | Home',
+    pageTitle: 'Finance Club IITP',
     path: '/',
     message: req.flash('message'),
   })
@@ -65,9 +75,9 @@ app.post('/', async (req, res) => {
         to: email,
         subject: 'Finance Club IIT Patna',
         html: `<h3>Dear, ${name}</h3>
-        <p>Thanks for writing us. We will reach you soon.<br>
+        <p>Thanks for writing us. We will reach you soon:)<br>
         <b>Contact us at : </b>fin_club@iitp.ac.in</p><br>
-        <small>This is auto generated email, Please don't reply</small>`,
+        <small>This is an auto generated email, Please don't reply</small>`,
       })
 
       if (confirm.messageId) {
@@ -81,10 +91,21 @@ app.post('/', async (req, res) => {
 
   res.redirect('/')
 })
+app.get('/blogs', async (req, res, next) => {
+  const articles = await article.find().sort({ createdAt: 'desc' })
+  res.status(200).render('blogs', {
+    articles: articles,
+    pageTitle: 'Finance Club IITP | Blogs',
+    path: '/blogs',
+  })
+  next()
+})
+
+app.use('/articles', articleRouter)
 
 app.get('/resources', (req, res, next) => {
   res.status(200).render('resources.ejs', {
-    pageTitle: 'Finance Club IITP | Resources',
+    pageTitle: 'FC Blogs | Resources',
     path: '/resources',
   })
   next()

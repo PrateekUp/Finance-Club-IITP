@@ -23,8 +23,8 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  margin-bottom: 30px !important;
-  margin-top: 30px !important;
+  margin-bottom: 15px !important;
+  margin-top: 20px !important;
 }
 
 .single-box {
@@ -90,6 +90,7 @@
 	border-radius: 4px;
 }
 .team-slider .owl-dots {
+	display: none;
 	position: absolute;
 	left: 0;
 	right: 0;
@@ -119,13 +120,13 @@
 }
 @-webkit-keyframes move-animation {
 	0% {
-		top: 2px;
+		top: 1px;
 	}
 	50% {
-		top: -2px;
+		top: -1px;
 	}
 	100% {
-		top: 2px;
+		top: 1px;
 	}
 }
 

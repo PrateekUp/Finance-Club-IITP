@@ -1,0 +1,40 @@
+* {
+  padding: 0;
+  margin: 0 !important;
+  font-family: 'Nunito', sans-serif;
+}
+
+.bg-color1 {
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #39e9e6, #2238b3);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right,  #39e9e6, #2238b3);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.card {
+  box-shadow: whitesmoke;
+}
+
+
+/* blogcss */
+.blogarea {
+  width: 100vw;
+  padding-top: 80px;
+  background-color: rgba(9, 0, 47, 255);
+}
+
+.bloghead {
+  width: 100vw;
+  text-align: center;
+  padding: 10px 5px;
+}
+
+.bloghead h1 {
+  color: rgb(243, 198, 198);
+  font-family: 'Orbitron', sans-serif
+}
+
+.blogs {
+  width: 100vw;
+}
