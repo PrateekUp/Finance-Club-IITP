@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<%- include ('./includes/head.ejs') %>
+    <%- include ('./includes/head.ejs') %>
 
     <body>
         <%- include ('./includes/navbar.ejs') %>
+       <!-- Scroll to top -->
+        <%- include ('./includes/top.ejs') %>
+
             <li class="nav-item">
                 <a class="nav-link <%= path === '/contact' ? 'active' : '' %>" href="#contact">Contact Us</a>
             </li>
@@ -19,6 +22,7 @@
                 <%}%>
 
 
+
                     <section class="first-section-home">
 
 
@@ -27,10 +31,10 @@
                         justify-content: center;
                         align-items: center;
                         height: 60vh;">
-                            <img src="/images/logo.png" alt="loading"
+                            <img src="/images/logo.png" alt="loading" class="logo"
                                 style="z-index: 15;width: 100px;height: 100px; margin-top: 139px !important; transition: all 0.3s;">
                             <h1 class="heading">FINANCE CLUB</h1>
-                            <h4>IIT Patna
+                            <h4 class="heading2">IIT Patna
                                 <hr style="border: solid 1px aliceblue; position:relative; margin: 0;padding: 0;" />
                             </h4>
 
@@ -43,6 +47,21 @@
 
                     </section>
                     <section class="second-section-home row" id='about' style="padding-left: 10px;padding-right: 10px;">
+                        <style>
+                            #about{
+                                padding: 9px !important;
+                                padding-bottom: 20px !important;
+                                border-radius: 15px !important;
+                                margin-top: 30px !important;
+                                margin-left: 20px !important; 
+                                margin-right: 20px !important; 
+                            }
+                            #about:hover{
+                                box-shadow: 0px 0px 50px -10px rgba(19, 1, 1, 0.105), 0px 0px 50px -10px  rgba(19, 1, 1, 0.916);
+                                /* box-shadow: rgba(50, 50, 93, 0.95) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; */
+                                
+                            }
+                        </style>
                         <div class="col-lg-6 col-md-7 col-sm-12">
                             <h1
                                 style="font-size: 2.5rem; color: rgba(9,0,47,255); font-weight: 500; font-family: 'Orbitron', sans-serif;">
@@ -66,10 +85,27 @@
                     </section>
                     <hr>
                     <section class="third-section-home row" style="padding-left: 10px;padding-right: 10px; color: rgb(112, 113, 116);" >
+                        <style>
+                            .third-section-home{
+                                padding: 9px !important;
+                                padding-top: 20px !important;
+                                padding-bottom: 20px !important;
+                                border-radius: 15px !important;
+                                margin-top: 26px !important;
+                                margin-left: 20px !important; 
+                                margin-right: 20px !important; 
+                            }
+                            .third-section-home:hover{
+                                box-shadow: 0px 0px 50px -10px rgba(19, 1, 1, 0.105), 0px 0px 50px -10px  rgba(19, 1, 1, 0.916);
+                                /* box-shadow: rgba(50, 50, 93, 0.95) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; */
+                                
+                            }
+                        </style>
                         <div class="col-lg-6 col-md-7 col-sm-12">
                             <img src="/images/working.png" alt="working" />
                         </div>
                         <div class="col-lg-6 col-md-7 col-sm-12">
+                            
                             <h1
                                 style="font-size: 2.5rem; color: rgba(9,0,47,255); font-weight: 500; font-family: 'Orbitron', sans-serif;">
                                 Working of Finance Club</h1>
@@ -93,6 +129,21 @@
                     </section>
                     <hr>
                     <section class="fourth-section-home" id="contact" style="padding-left: 15px;padding-right: 15px;">
+                        <style>
+                            .fourth-section-home{
+                                padding: 9px !important;
+                                padding-top: 20px !important;
+                                padding-bottom: 20px !important;
+                                border-radius: 15px !important;
+                                margin-top: 26px !important;
+                                margin-left: 20px !important; 
+                                margin-right: 20px !important; 
+                            }
+                            .fourth-section-home:hover{
+                                box-shadow: 0px 0px 50px -10px rgba(19, 1, 1, 0.105), 0px 0px 50px -10px  rgba(19, 1, 1, 0.916);
+                                /* box-shadow: rgba(50, 50, 93, 0.95) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; */  
+                            }
+                        </style>
                         <h1
                             style="font-size: 2.5rem; color: rgba(9,0,47,255); font-weight: 500; font-family: 'Orbitron', sans-serif;">
                             Contact Us</h1>
@@ -100,6 +151,22 @@
                     </section>
                     <hr>
                     <section class="fifth-section-home">
+                        <style>
+                            .fifth-section-home{
+                                padding: 9px !important;
+                                padding-top: 20px !important;
+                                padding-bottom: 20px !important;
+                                border-radius: 15px !important;
+                                margin-top: 26px !important;
+                                margin-bottom: 26px !important;
+                                margin-left: 20px !important; 
+                                margin-right: 20px !important; 
+                            }
+                            .fifth-section-home:hover{
+                                box-shadow: 0px 0px 50px -10px rgba(19, 1, 1, 0.105), 0px 0px 50px -10px  rgba(19, 1, 1, 0.916);
+                                /* box-shadow: rgba(50, 50, 93, 0.95) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; */  
+                            }
+                        </style>
                         <h1
                             style="font-size: 2.5rem; color: rgba(9,0,47,255); font-weight: 500; font-family: 'Orbitron', sans-serif;">
                             Catch our Updates!</h1>
@@ -107,7 +174,7 @@
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/u6n6fQlkNb8?controls=0"
                                 title="YouTube video player" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
+                                allowfullscreen ></iframe>
                             <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:6930869507972313088"
                                 height="1119" width="504" frameborder="0" allowfullscreen=""
                                 title="Embedded post"></iframe>
@@ -209,8 +276,9 @@
                             <script async src="//www.instagram.com/embed.js"></script>
 
                         </div>
-
+                        
                     </section>
+    
                     <%- include ('./includes/footer.ejs') %>
     </body>
 
