@@ -9,10 +9,12 @@ const session = require('express-session')
 const flash = require('connect-flash')
 const article = require('./models/article')
 
-main().catch(err => console.log(err));
+main().catch((err) => console.log(err))
 
 async function main() {
-  await mongoose.connect('mongodb+srv://prateek147:fcblog77@cluster0.uffsqaj.mongodb.net/FCBlogs?retryWrites=true&w=majority');
+  await mongoose.connect(
+    'mongodb+srv://prateek147:fcblog77@cluster0.uffsqaj.mongodb.net/FCBlogs?retryWrites=true&w=majority'
+  )
   console.log(`working`)
 }
 
@@ -23,7 +25,6 @@ app.use(
     saveUninitialized: true,
   })
 )
-
 
 app.use(flash())
 
@@ -52,7 +53,8 @@ app.post('/', async (req, res) => {
     secure: false,
     auth: {
       user: 'finclubiitp.noreply@gmail.com',
-      pass: 'finclubiitp@2022',
+      pass: 'snajzngtqrcwrovz',
+      // pass: 'finclubiitp@2022',
     },
     tls: {
       rejectUnauthorized: false,
@@ -62,9 +64,9 @@ app.post('/', async (req, res) => {
   try {
     let info = await transporter.sendMail({
       from: `"${name}" finclubiitp.noreply@gmail.com`,
-      to: 'fin_club@iitp.ac.in',
+      to: 'fin_club@iitp.ac.in', //Email where you want to receive messages
       subject: name,
-      html: `<h3>${name}</h3><h4>${email}</h4><p>${message}</p>`,
+      html: `From : <h3>${name}</h3><h4>${email}</h4><p>${message}</p>`,
     })
 
     if (info.messageId) {
