@@ -12,7 +12,8 @@ const article = require('./models/article')
 main().catch(err => console.log(err));
 
 async function main() {
-  await mongoose.connect('mongodb://localhost:27017/FCblogs');
+  await mongoose.connect('mongodb+srv://prateek147:fcblog77@cluster0.uffsqaj.mongodb.net/FCBlogs?retryWrites=true&w=majority');
+  console.log(`working`)
 }
 
 app.use(
