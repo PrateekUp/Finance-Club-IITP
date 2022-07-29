@@ -31,7 +31,7 @@
                                     <div class="card bg-color1 border-info h-100" style="width: 27rem;">
                                         <div class="card-body">
                                             <h5 class="card-title">
-                                                <%= article.title %>
+                                                <b><%= article.title %></b>
                                             </h5>
                                             <h6 class="card-subtitle mb-2 text-muted">
                                                 <%= article.createdAt.toLocaleDateString() %>
@@ -51,9 +51,9 @@
                                         <div class="card bg-color1 border-info h-100" style="width: 27rem;">
                                             <div class="card-body">
                                                 <h5 class="card-title">
-                                                    New to this Field : Get all the Resources you need!
+                                                   <b>New to this Field : Get all the Resources you need!</b>
                                                 </h5>
-                                                <h6 class="card-subtitle mb-2 text-muted">
+                                                <h6 class="card-subtitle mb-2 text-muted" style="color: rgb(255, 153, 0);">
                                                     1/6/2022
                                                 </h6>
                                                 <p class="card-text">
@@ -73,8 +73,6 @@
 
 
                 </div>
-
-
             </section>
             <%- include ('./includes/footer.ejs') %>
     </body>
