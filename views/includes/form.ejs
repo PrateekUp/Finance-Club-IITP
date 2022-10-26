@@ -1,44 +1,48 @@
 <form method="POST" id="formid">
-  <div class="mb-3">
-    <style>
-      .mb-3{
-          padding: 9px !important;
-          padding-top: 15px !important;
-          padding-bottom: 18px !important;
-          border-radius: 15px !important;
-          margin-top: 23px !important;
-          margin-left: 20px !important; 
-          margin-right: 20px !important; 
-      }
-      .mb-3:hover{
-          /* box-shadow: 0px 0px 50px -10px rgba(19, 1, 1, 0.105), 0px 0px 50px -10px  rgba(19, 1, 1, 0.916); */
-          box-shadow: rgba(0, 0, 0, 0.408) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.184) 0px 18px 36px -18px inset;
-          
-      }
-      h5{
-        font-size: 1.2rem; color: rgb(19, 19, 127); font-weight: 500; font-family: 'Orbitron', sans-serif; box-sizing: border-box;
-      }
-      .form-control{
-        border: 2px solid rgb(19, 19, 127)  !important ; 
-      }
+  <div class="mb-3 mb-4">
+  <style>
+    .mb-3{
+      padding: 6px !important;
+      /* padding-bottom: 18px !important; */
+      border-radius: 15px !important;
+      margin-top: 2px !important;
+      margin-left: 20px !important; 
+      margin-right: 20px !important; 
+    }
+    .mb-4{
+      margin-top: 12px !important;
+    }
+    .mb-3:hover{
+      /* box-shadow: 0px 0px 50px -10px rgba(19, 1, 1, 0.105), 0px 0px 50px -10px  rgba(19, 1, 1, 0.916); */
+      box-shadow: rgba(0, 0, 0, 0.408) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.184) 0px 18px 36px -18px inset;
+      
+    }
+    h5{
+      font-size: 1.2rem; color: rgb(19, 19, 127); font-weight: 500; font-family: 'Orbitron', sans-serif; box-sizing: border-box;
+    }
+    .form-control{
+      border: 2px solid rgb(19, 19, 127)  !important ; 
+    }
+
   </style>
 
     <label for="exampleInputEmail1" class="form-label"><h5>Name &#8608</h5></label>
-    <input name="name" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+    <input name="name" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="ex. John"/>
   </div>
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label"><h5>Email &#8608</h5></label>
-    <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
+    <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="john@gmail.com"/>
   </div>
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label"><h5>Send Message &#8608</h5></label>
-    <textarea name="message" class="form-control" id="" cols="20" rows="4"></textarea>
+    <textarea name="message" class="form-control" id="" cols="20" rows="4" placeholder="xyz"></textarea>
   </div>
   <style>
     .form-control{
       border-radius: 10px;
     }
   </style>
+
   <button type="submit" class="btn btn-outline-primary" style="border-radius: 100px">Send Message </button>
 
 </form>

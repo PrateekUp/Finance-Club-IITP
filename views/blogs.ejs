@@ -27,16 +27,22 @@
                         <div class="row row-cols-1 row-cols-md-3 g-4">
                             <% articles.forEach(article=> { %>
                                 <div class="col"
-                                    style="margin-bottom: 40px!important;display: flex;justify-content: center;">
-                                    <div class="card bg-color1 border-info h-100" style="width: 27rem;">
+                                    style="margin-bottom: 40px !important ; display: flex;justify-content: center;">
+                                    <div class="card bg-color1 border-info h-100 blogbox" style="width: 27rem; border-radius: 15px;">
                                         <div class="card-body">
-                                            <h5 class="card-title">
+                                            
+                                            <h5 class="card-title"
+                                                style=" color:#000000 ;font-family: 'Brush Script MT', cursive !important; font-weight: 200;">
                                                 <b><%= article.title %></b>
                                             </h5>
+                                            
+                                            <!-- this is for date -->
                                             <h6 class="card-subtitle mb-2 text-muted">
                                                 <%= article.createdAt.toLocaleDateString() %>
                                             </h6>
-                                            <p class="card-text">
+                                            <!-- this is for text -->
+                                            <p class="card-text"
+                                                style="color:#000000b9 ;font-size: 17.5px;" >
                                                 <%= article.description %>
                                             </p>
                                             <a href="articles/<%= article.id %>" class="card-link text-danger">Load
@@ -48,7 +54,7 @@
                                 <% }) %>
                                     <div class="col"
                                         style="margin-bottom: 40px!important;display: flex;justify-content: center;">
-                                        <div class="card bg-color1 border-info h-100" style="width: 27rem;">
+                                        <div class="card bg-color1 border-info h-100 blogbox" style="width: 27rem;border-radius: 15px;">
                                             <div class="card-body">
                                                 <h5 class="card-title">
                                                    <b>New to this Field : Get all the Resources you need!</b>
